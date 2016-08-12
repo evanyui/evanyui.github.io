@@ -1,0 +1,46 @@
+<html>
+	<head>
+	<title>Particle Simulation</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<script src="dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+	</head>
+<body>
+	<div id="background">
+		<canvas id="canvas" onmousemove="trackMouse(event)" onmousedown="dragging(event)" onmouseup="dropping(event)"></canvas>
+
+		<div class="controlMenu" id="menubar">
+			<!-- <div class="menu" id="menu1">
+				<label for="speed" class="label">Speed:</label>
+				<input type="number" value="0" id="speed" class="control" placeholder="0.1-50?">
+				<label for="acceleration" class="label">Accelaration:</label>
+				<input type="number" value="0" id="acceleration" class="control" placeholder="not available">
+				<label for="angle" class="label">Angle(degree):</label>
+				<input type="number" value="0" id="angle" class="control" placeholder="">
+			</div> -->
+			<div class="menu" id="menu2">
+				<input type="button" onclick="clearCanvas()" id="clear" value="Clear">
+				<label for="mass" class="label">Mass(radius):</label>
+				<input type="number" value="2" id="mass" class="control" placeholder="1 ~ 50">
+			</div>
+			<div class="menu" id="menu3">
+				<label for="collision" class="label" id="colLabel">Collision: </label>
+				<input type="checkbox" id="collision" value="false" onclick="collisionSwitch(this)">
+				<label for="shadow" class="label" id="shadLabel">Glow effect: </label>
+				<input type="checkbox" id="shadow" value="false" onclick="shadowSwitch(this)">
+			</div>
+			<div class="menu" id="menu4">	
+				<input type="button" id="help" onclick="help()" value="Learn More Controls">
+					
+			</div>
+			<div class="bottom" id="bottom">
+				<p id="version"><br>Particle Simulation. A product of Chuan Yui Teh. 2015 <br>Version 1.1.4</p>
+				<input type="button" id="about" onclick="about()" value="?">
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

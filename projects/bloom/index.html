@@ -1,0 +1,67 @@
+<html>
+<head>
+   <title>Bloom!</title>
+   <script src="dist/sweetalert.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+   <script type="text/javascript" src="js/bloom.js"></script>
+   <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="controls">
+      <label>Trees Colors</label>
+      <div class="palette">
+        <input id="tree1" type="text" size="20" value="49,91,22">
+        <input id="tree2" type="text" size="20" value="70,100,40">
+        <input id="tree3" type="text" size="20" value="126,150,0">
+        <input id="tree4" type="text" size="20" value="70,60,28">
+      </div>
+      <label>Sky Colors</label>
+      <div class="palette">
+        <input id="sky1" type="text" size="20" value="255,255,255">
+        <input id="sky2" type="text" size="20" value="255,170,0">
+        <input id="sky3" type="text" size="20" value="200,20,140">
+        <input id="sky4" type="text" size="20" value="250,250,0">
+      </div>
+      <label>Decoration Colors</label>
+      <div class="palette">
+        <input id="d1" type="text" size="20" value="222,49,99">
+        <input id="d2" type="text" size="20" value="255,204,0">
+        <input id="d3" type="text" size="20" value="255,255,255">
+      </div>
+      <label>Dandelion Colors</label>
+      <div class="palette">
+        <input id="n1" type="text" size="20" value="255,255,255">
+        <input id="n2" type="text" size="20" value="200,190,255">
+      </div>
+    </div>
+    <div id="canvas-container">
+      <!-- flowers -->
+      <canvas width=800 height=600 id="canvas" style="position: absolute; z-index: 4;"></canvas>
+      <!-- front land -->
+      <canvas width=800 height=600 id="canvas5" style="position: absolute; z-index: 3;"></canvas>
+      <!-- effects! -->
+      <canvas width=800 height=600 id="canvas2" style="position: absolute; z-index: 5;"></canvas>
+      <!-- trees -->
+      <canvas width=800 height=300 id="canvas3" style="position: absolute; z-index: 1;"></canvas>
+      <!-- trees relfection -->
+      <canvas width=800 height=300 id="canvas3copy" style="position: absolute; z-index: 1;"></canvas>
+      <!-- sky -->
+      <canvas width=800 height=300 id="canvas4" style="position: absolute; z-index: 0;"></canvas>
+      <!-- sky reflection -->
+      <canvas width=800 height=300 id="canvas4copy" style="position: absolute; z-index: 0;"></canvas>
+      <!-- lake -->
+      <canvas width=800 height=300 id="canvas5copy" style="position: absolute; z-index: 2;"></canvas>
+      <!-- <canvas width=800 height=300 id="canvastry" style="position: absolute; z-index: 0;"></canvas> -->
+    </div>
+    <div id="brush">
+    </div>
+    <div id="instructions">
+      <p>
+        Drag and drop an audio file here
+      </p>
+    </div>
+  </div>
+</body>
+</html>
