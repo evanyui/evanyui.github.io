@@ -1,0 +1,221 @@
+body {padding: 0; margin: 0;}
+#grass {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("assets/grass.png");
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: center;
+}
+#person {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("assets/person.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#dress {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("assets/dress.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#son {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("assets/son.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#sky {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("assets/sky.png");
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  background-color: transparent;
+}
+
+.scene {
+  padding: 0;
+  margin: 0;
+  min-height: 100px;
+  background: transparent;
+}
+
+.fill {
+  position: absolute;
+  /*Enable scrolling vertically*/
+  /*bottom: 0;*/
+  /*right: 0;
+  left: 0;*/
+  /*top: 0;*/
+}
+
+.expand-width {
+  width: 100%;
+}
+
+
+/* Floating animation */
+.floating{
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, -4px);}
+    50% {-webkit-transform:translate(0, 0px);}
+    to {-webkit-transform: translate(0, -4px);    }
+}
+
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, -4px);}
+    50% {-moz-transform:translate(0, 0px);}
+    to {-moz-transform: translate(0, -4px);}
+}
+
+
+.scaling{
+    float: left;
+    -webkit-animation-name: scalex;
+    -webkit-animation-duration:3s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -moz-animation-name: scale;
+    -moz-animation-duration:3s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+}
+
+    @-webkit-keyframes scalex{
+        from {-webkit-transform: scale(0.9);}
+        65% {-webkit-transform: scale(1.0);}
+        to {-webkit-transform: scale(0.9);}
+    }
+
+    @-moz-keyframes scale{
+        from {-moz-transform: scale(0.9);}
+        65% {-moz-transform: scale(1.0);}
+        to {-moz-transform: scale(0.9);}
+    }
+
+#description {
+  width: 100vw;
+  pointer-events: auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 10px;
+  background-color:rgba(255,255,255,0.7);
+  -webkit-backdrop-filter: blur(5px);
+  position:absolute;
+  bottom: 0px;
+  padding: 5px;
+}
+
+/* Cloudy Effects */
+#smoke {
+  /* push if mobile */
+  /*margin-top: 25%;*/
+}
+
+.sky {
+  height: 400px;
+  background: rgba(255,255,255,0);
+  position: relative;
+  overflow: hidden;
+}
+
+.clouds_one {
+  background-image: url("assets/clouds.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-animation: cloud_one 20s linear infinite;
+  -moz-animation: cloud_one 20s linear infinite;
+  -o-animation: cloud_one 20s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0)
+}
+
+.clouds_two {
+  background-image: url("assets/clouds2.png");
+  background-size: cover;
+  background-repeat: no-repeat;;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: cloud_one 50s linear infinite;
+  -moz-animation: cloud_one 50s linear infinite;
+  -o-animation: cloud_one 50s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0)
+}
+
+@-webkit-keyframes cloud_one {
+  0% {
+    left: -100%
+  }
+  100% {
+    left: 100%
+  }
+}
+
+@-moz-keyframes cloud_one {
+  0% {
+    left: -100%
+  }
+  100% {
+    left: 100%
+  }
+}
+
+@-webkit-keyframes cloud_two {
+  0% {
+    left: -300%
+  }
+  100% {
+    left: 300%
+  }
+}
+
+@-moz-keyframes cloud_two {
+  0% {
+    left: -300%
+  }
+  100% {
+    left: 300%%
+  }
+}
