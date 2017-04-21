@@ -1,5 +1,7 @@
 @import url("font-awesome.min.css");
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
 
 /*
 	Prologue by HTML5 UP
@@ -16,6 +18,10 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+	}
+
+	p {
+		font-size: 12pt;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -58,43 +64,44 @@
 
 /* Bar */
 	.skill-progress-bar{
-	  display: inline;
-	  float: left;
-	  width: 100%;
+	  /*float: left;*/
+		display: inline;
+	  width: 20%;
 	}
 
 
 	.skill-progress-bar span {
 	  color: #727272;
-	  display: inline-block;
-	  font-size: 16px;
+	  /*display: inline-block;*/
+	  font-size: 12px;
+		font-family: 'Sans', sans-serif;
 	  font-weight: bold;
-	  margin-bottom: 5px;
+	  margin-bottom: 2px;
 	  text-transform: uppercase;
 	}
 
 
 	.pro-bar-container {
-	  border-radius: 20px;
-	  height: 18px;
+	  border-radius: 16px;
+	  height: 8px;
 	}
 
 
 	.pro-bar {
-	  border-radius: 20px;
-	  height: 18px;
+	  border-radius: 16px;
+	  height: 8px;
 	}
 
 /* School */
 	.exp-pic {
 		width: 300px;
 		height: 200px;
-		border-radius: 10px;
+		border-radius: 2px;
 	}
 
 /* About picture */
 	.banner {
-		border-radius: 10px;
+		border-radius: 2px;
 	}
 
 /* Projects */
@@ -107,7 +114,7 @@
 	}
 
 	.item .image:hover {
-		border: 4px solid #E27689;
+		border: 4px solid #00BAFF;
 	}
 
 /* Containers */
@@ -1606,8 +1613,8 @@
 
 	body {
 		background: #fff;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 19pt;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 12pt;
 		font-weight: 300;
 		line-height: 1.75em;
 		color: #888;
@@ -1626,16 +1633,17 @@
 
 	input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 19pt;
+		font-size: 14pt;
 		font-weight: 300;
 		line-height: 1.75em;
 		color: #888;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 300;
+		font-weight: 400;
 		color: #666;
 		line-height: 1.5em;
+		margin-bottom: 10px;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1648,7 +1656,7 @@
 		}
 
 	h2 {
-		font-size: 2em;
+		font-size: 1.5em;
 		letter-spacing: -1px;
 	}
 
@@ -1661,7 +1669,7 @@
 			}
 
 	h3 {
-		font-size: 1.5em;
+		font-size: 1.1em;
 	}
 
 	header {
@@ -1677,7 +1685,7 @@
 	}
 
 	strong, b {
-		font-weight: 300;
+		font-weight: 400;
 		color: #666;
 	}
 
@@ -1696,7 +1704,7 @@
 	}
 
 		a:hover {
-			color: #E27689;
+			color: #00BAFF;
 		}
 
 	sub {
@@ -1759,16 +1767,16 @@
 		}
 
 		.image.avatar48 {
-			width: 60px;
-			height: 60px;
+			width: 160px;
+			height: 160px;
 			background: #f00;
-			border-radius: 30px;
+			border-radius: 80px;
 		}
 
 			.image.avatar48 img {
-				width: 60px;
-				height: 60px;
-				border-radius: 30px;
+				width: 160px;
+				height:160px;
+				border-radius: 80px;
 			}
 
 		.image.fit {
@@ -1870,7 +1878,7 @@
 		form input[type="password"]:focus,
 		form select:focus,
 		form textarea:focus {
-			box-shadow: 0 0 2px 1px #8ebebc;
+			box-shadow: 0 0 2px 1px #00BAFF;
 			background: #fff;
 		}
 
@@ -1953,11 +1961,11 @@
 	.button {
 		position: relative;
 		display: inline-block;
-		border-radius: 0.35em;
+		border-radius: 2px;
 		color: #fff !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #E27689;
+		background-color: #00BAFF;
 		border: 0;
 		cursor: pointer;
 		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
@@ -2001,7 +2009,7 @@
 		}
 
 			.item header h3 {
-				font-size: 1em;
+				font-size: 1.0em;
 			}
 
 /* Icons */
@@ -2081,7 +2089,7 @@
 			}
 
 		#header .icons {
-			font-size: 0.8em;
+			font-size: 0.6em;
 			text-align: center;
 		}
 
@@ -2107,7 +2115,7 @@
 		#logo h1 {
 			position: relative;
 			color: #fff;
-			font-weight: 600;
+			font-weight: 800;
 			font-size: 1em;
 			line-height: 1em;
 		}
@@ -2122,7 +2130,7 @@
 		}
 
 		#logo .image {
-			position: absolute;
+			/*position: absolute;*/
 			left: 0;
 			top: 0;
 		}
@@ -2166,7 +2174,7 @@
 			}
 
 				#nav ul li a.active span:before {
-					color: #e27689;
+					color: #00BAFF;
 				}
 
 /* Footer */
@@ -2177,7 +2185,7 @@
 		background-color: #dce3e2;
 		padding: 3em 0 4em 0;
 		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
-		font-size: 0.8em;
+		font-size: 0.5em;
 	}
 
 		#footer .copyright {
@@ -2245,7 +2253,6 @@
 
 			#main > section.one {
 				background-color: #81918E;
-				/*background-image: url("../../images/hexagon2.jpg");*/
 			}
 
 			#main > section.two {
@@ -2275,7 +2282,7 @@
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 17pt;
+				font-size: 15pt;
 			}
 
 		/* Header */
@@ -2321,7 +2328,7 @@
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 16pt;
+				font-size: 14pt;
 			}
 
 			.container {
@@ -2353,8 +2360,8 @@
 
 			#nav ul li a {
 				font-size: 0.8em;
-				padding-top: 0.5em;
-				padding-bottom: 0.5em;
+				padding-top: 0.2em;
+				padding-bottom: 0.2em;
 			}
 
 				#nav ul li a span {
@@ -2506,7 +2513,7 @@
 						-moz-osx-font-smoothing: grayscale;
 						content: '\f0c9';
 						color: #fff;
-						font-size: 18px;
+						font-size: 16px;
 						line-height: 2.25em;
 						background: rgba(128, 136, 144, 0.5);
 						border-radius: 0.35em;
@@ -2579,11 +2586,11 @@
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 14pt;
+				font-size: 12pt;
 			}
 
 			h2 {
-				font-size: 1.5em;
+				font-size: 1.2em;
 				letter-spacing: 0;
 				font-weight: 300;
 			}
@@ -2596,7 +2603,7 @@
 
 			ul.icons a {
 				width: 2em;
-				font-size: 1.25em;
+				font-size: 0.8em;
 			}
 
 		/* Main */

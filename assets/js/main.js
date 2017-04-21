@@ -33,14 +33,14 @@
 				$body.removeClass('is-loading');
 
 				// Generate background according to time and greet
-				if(hours>=18 || hours<6) {
-					$('section.one').css('background-image','url(./images/hexagon2.jpg)');
-					document.getElementById("hello").innerHTML = "Good evening! I am Chuan Yui.";
-				}
-				else {
-					$('section.one').css('background-image','url(./images/hexagon.jpg)');
-					document.getElementById("hello").innerHTML = "Hello! I am Chuan Yui";
-				}
+				// if(hours>=18 || hours<6) {
+				// 	$('section.one').css('background-image','url(./images/hexagon2.jpg)');
+				// 	document.getElementById("hello").innerHTML = "Good evening! I am Chuan Yui.";
+				// }
+				// else {
+				// 	$('section.one').css('background-image','url(./images/hexagon.jpg)');
+				// 	document.getElementById("hello").innerHTML = "Hello! I am Chuan Yui";
+				// }
 
 			});
 
