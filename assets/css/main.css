@@ -2253,6 +2253,7 @@
 
 			#main > section.one {
 				background-color: #81918E;
+				background-image: url('../../images/cover.jpg');
 			}
 
 			#main > section.two {
