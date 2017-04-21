@@ -1,0 +1,3 @@
+[submodule "projects/learning-dino"]
+	path = projects/learning-dino
+	url = https://github.com/evanyui/learning-dino.git
