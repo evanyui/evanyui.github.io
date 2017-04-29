@@ -1,6 +1,0 @@
-[submodule "projects/learning-dino"]
-	path = projects/learning-dino
-	url = https://github.com/evanyui/learning-dino.git
-[submodule "PerlinNoiseGeneration"]
-	path = PerlinNoiseGeneration
-	url = https://github.com/evanyui/PerlinNoiseGeneration.git
